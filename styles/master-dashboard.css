@@ -1,0 +1,76 @@
+body {
+    background-color: #14142B;
+    color: #fff;
+}
+
+header {
+    background-color: #1F1F36;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 100px;
+}
+
+header .title {
+    padding: 30px 0;
+    font-weight: 500;
+}
+
+header .title a {
+    font-size: 22px;
+    color: inherit;
+    text-decoration: none;
+}
+
+header ul li {
+    text-decoration: none;
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 25px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.page-title {
+    margin: 70px 0;   
+}
+
+.page-title h5 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card {
+    width: 100%;
+    background-color: #1F1F36;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-action-btn {
+    background-color: #4285F4;
+    border-color: #4285F4;
+    box-shadow: 0px 2px 15px rgb(66, 133, 244, 0.3);
+    border-radius: 8px;
+    color: inherit;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-size: 15px;
+}

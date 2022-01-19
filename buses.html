@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/master.css">
+     
+
+    <title>Orders</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="#">Busman</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="#" class="active">Buses</a></li>
+                <li><a href="drivers.html">Drivers</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="page-title">
+                <h5>Buses</h5>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-action-btn" href="#" role="button">
+                        Add
+                    </a>
+                    <div class="card-filters">
+                        <div class="filter">
+                            <small>Sort by</small>
+                            <select name="sortby" id="status">
+                                <option value="rent-date" selected>Created At</option>
+                                <option value="contact-name">Seat</option>
+                                <option value="contact-phone">Price per Day</option>
+                            </select>
+                        </div>
+                        <div class="search">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="Search...">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <table class="card-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Plate Number</th>
+                                <th>Brand</th>
+                                <th>Seat</th>
+                                <th>Price per Day</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>S 5867 BE</td>
+                                <td>Scania</td>
+                                <td>40</td>
+                                <td>Rp 200.000</td>
+                                <td class="action-btn">
+                                     
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>AD 2738 SK</td>
+                                <td>Mercedes-Benz</td>
+                                <td>60</td>
+                                <td>Rp 300.000</td>
+                                <td class="action-btn">
+                                     
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>K 4758 SE</td>
+                                <td>Man R37</td>
+                                <td>50</td>
+                                <td>Rp 250.000</td>
+                                <td class="action-btn">
+                                     
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>S 2389 BT</td>
+                                <td>Scania</td>
+                                <td>40</td>
+                                <td>Rp 200.000</td>
+                                <td class="action-btn">
+                                     
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>S 5867 BE</td>
+                                <td>Scania</td>
+                                <td>50</td>
+                                <td>Rp 180.000</td>
+                                <td class="action-btn">
+                                     
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card-footer">
+                    <small>
+                        Showing 5 of 25 data
+                    </small>
+                    <div class="pagination">
+                        <a href="#prev" class="prev disabled"><</a>
+                        <a href="#" class="selected">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="disabled">...</a>
+                        <a href="#">5</a>
+                        <a href="#" class="next">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

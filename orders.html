@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/master.css">
-    <link rel="stylesheet" href="styles/master-dashboard.css">
+     
 
     <title>Orders</title>
 </head>
@@ -20,9 +20,9 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Buses</a></li>
-                <li><a href="#">Drivers</a></li>
+                <li><a href="#" class="active">Orders</a></li>
+                <li><a href="buses.html">Buses</a></li>
+                <li><a href="drivers.html">Drivers</a></li>
             </ul>
         </nav>
     </header>
@@ -42,9 +42,9 @@
                             <small>Status</small>
                             <select name="status" id="status">
                                 <option value="all" selected>All</option>
-                                <option value="confirmed">Confirmed</option>
+                                <option value="confirmed">CONFIRMED</option>
                                 <option value="ongoing">ONGOING</option>
-                                <option value="done">Done</option>
+                                <option value="done">DONE</option>
                             </select>
                         </div>
                         <div class="filter">
@@ -70,7 +70,7 @@
                     <table class="card-table">
                         <thead>
                             <tr>
-                                <th>No</th>
+                                <th>#</th>
                                 <th>Contact Name</th>
                                 <th>Contact Phone</th>
                                 <th>Rent Date</th>
@@ -86,9 +86,7 @@
                                 <td>07/12/2021 - 10/12/2021</td>
                                 <td><span class="status-label ongoing">ONGOING</span></td>
                                 <td class="action-btn">
-                                    <a href="#">
-                                        <i class="far fa-file-alt"></i>
-                                    </a>
+                                     
                                     <a href="#">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
@@ -104,9 +102,7 @@
                                 <td>02/12/2021 - 05/12/2021</td>
                                 <td><span class="status-label done">DONE</span></td>
                                 <td class="action-btn">
-                                    <a href="#">
-                                        <i class="far fa-file-alt"></i>
-                                    </a>
+                                     
                                     <a href="#">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
@@ -122,9 +118,7 @@
                                 <td>12/12/2021 - 15/12/2021</td>
                                 <td><span class="status-label confirmed">CONFIRMED</span></td>
                                 <td class="action-btn">
-                                    <a href="#">
-                                        <i class="far fa-file-alt"></i>
-                                    </a>
+                                     
                                     <a href="#">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
@@ -140,9 +134,7 @@
                                 <td>10/12/2021 - 12/12/2021</td>
                                 <td><span class="status-label confirmed">CONFIRMED</span></td>
                                 <td class="action-btn">
-                                    <a href="#">
-                                        <i class="far fa-file-alt"></i>
-                                    </a>
+                                     
                                     <a href="#">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
@@ -152,15 +144,13 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>3</td>
+                                <td>5</td>
                                 <td>Timo Werner</td>
                                 <td>081234567891</td>
                                 <td>05/12/2021 - 08/12/2021</td>
                                 <td><span class="status-label done">DONE</span></td>
                                 <td class="action-btn">
-                                    <a href="#">
-                                        <i class="far fa-file-alt"></i>
-                                    </a>
+                                     
                                     <a href="#">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>

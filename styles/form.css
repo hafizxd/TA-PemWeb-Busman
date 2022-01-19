@@ -1,0 +1,49 @@
+form .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+form .row .row-child {
+    width: 90%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .form-control {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    padding: 0 10px;
+    text-decoration: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #14142B;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+}
+
+form .form-control::placeholder {
+    color: #C6BEBE;
+    font-size: 15px;
+}
+
+form .form-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form .form-btn input {
+    border: none;
+    background-color: #4285F4;
+    box-shadow: 0px 5px 15px rgb(66, 133, 244, 0.3);
+    border-radius: 5px;
+    color: inherit;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}

@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles/master.css">
+    <link rel="stylesheet" href="../styles/master.css">
      
 
     <title>Orders</title>
@@ -20,9 +20,9 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="orders.html">Orders</a></li>
-                <li><a href="buses.html">Buses</a></li>
-                <li><a href="#" class="active">Drivers</a></li>
+                <li><a href="#" class="active">Orders</a></li>
+                <li><a href="../buses/index.html">Buses</a></li>
+                <li><a href="../drivers/index.html">Drivers</a></li>
             </ul>
         </nav>
     </header>
@@ -30,20 +30,29 @@
     <main>
         <div class="container">
             <div class="page-title">
-                <h5>Drivers</h5>
+                <h5>Orders</h5>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="card-action-btn" href="#" role="button">
+                    <a class="card-action-btn" href="create.html" role="button">
                         Add
                     </a>
                     <div class="card-filters">
                         <div class="filter">
+                            <small>Status</small>
+                            <select name="status" id="status">
+                                <option value="all" selected>All</option>
+                                <option value="confirmed">CONFIRMED</option>
+                                <option value="ongoing">ONGOING</option>
+                                <option value="done">DONE</option>
+                            </select>
+                        </div>
+                        <div class="filter">
                             <small>Sort by</small>
                             <select name="sortby" id="status">
-                                <option value="rent-date" selected>Created At</option>
-                                <option value="contact-name">Name</option>
-                                <option value="contact-phone">Age</option>
+                                <option value="rent-date" selected>Rent Date</option>
+                                <option value="contact-name">Contact Name</option>
+                                <option value="contact-phone">Contact Phone</option>
                             </select>
                         </div>
                         <div class="search">
@@ -62,18 +71,20 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>ID Number</th>
+                                <th>Contact Name</th>
+                                <th>Contact Phone</th>
+                                <th>Rent Date</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Adi</td>
-                                <td>37</td>
-                                <td>28A38T</td>
+                                <td>Leroy Sane</td>
+                                <td>081234567891</td>
+                                <td>07/12/2021 - 10/12/2021</td>
+                                <td><span class="status-label ongoing">ONGOING</span></td>
                                 <td class="action-btn">
                                      
                                     <a href="#">
@@ -86,9 +97,10 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Surya</td>
-                                <td>28</td>
-                                <td>J898SJ</td>
+                                <td>Serge Gnabry</td>
+                                <td>085429443432</td>
+                                <td>02/12/2021 - 05/12/2021</td>
+                                <td><span class="status-label done">DONE</span></td>
                                 <td class="action-btn">
                                      
                                     <a href="#">
@@ -101,9 +113,10 @@
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Toni</td>
-                                <td>32</td>
-                                <td>829DS7</td>
+                                <td>Thomas Muller</td>
+                                <td>081234567891</td>
+                                <td>12/12/2021 - 15/12/2021</td>
+                                <td><span class="status-label confirmed">CONFIRMED</span></td>
                                 <td class="action-btn">
                                      
                                     <a href="#">
@@ -116,9 +129,10 @@
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>Bagas</td>
-                                <td>29</td>
-                                <td>HD9S78</td>
+                                <td>Kai Havertz</td>
+                                <td>081234567891</td>
+                                <td>10/12/2021 - 12/12/2021</td>
+                                <td><span class="status-label confirmed">CONFIRMED</span></td>
                                 <td class="action-btn">
                                      
                                     <a href="#">
@@ -131,9 +145,10 @@
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>Ferry</td>
-                                <td>24</td>
-                                <td>2JD9W0</td>
+                                <td>Timo Werner</td>
+                                <td>081234567891</td>
+                                <td>05/12/2021 - 08/12/2021</td>
+                                <td><span class="status-label done">DONE</span></td>
                                 <td class="action-btn">
                                      
                                     <a href="#">
@@ -150,7 +165,7 @@
 
                 <div class="card-footer">
                     <small>
-                        Showing 5 of 40 data
+                        Showing 5 of 38 data
                     </small>
                     <div class="pagination">
                         <a href="#prev" class="prev disabled"><</a>

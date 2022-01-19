@@ -40,16 +40,150 @@
                     <div class="card-filters">
                         <div class="filter">
                             <small>Status</small>
+                            <select name="status" id="status">
+                                <option value="all" selected>All</option>
+                                <option value="confirmed">Confirmed</option>
+                                <option value="ongoing">ONGOING</option>
+                                <option value="done">Done</option>
+                            </select>
                         </div>
                         <div class="filter">
-                            <small>Sort</small>
+                            <small>Sort by</small>
+                            <select name="sortby" id="status">
+                                <option value="rent-date" selected>Rent Date</option>
+                                <option value="contact-name">Contact Name</option>
+                                <option value="contact-phone">Contact Phone</option>
+                            </select>
                         </div>
                         <div class="search">
                             <form action="#">
                                 <input type="text" name="search" placeholder="Search...">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
                             </form>
-                            <i class="fas fa-search"></i>
                         </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <table class="card-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Contact Name</th>
+                                <th>Contact Phone</th>
+                                <th>Rent Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Leroy Sane</td>
+                                <td>081234567891</td>
+                                <td>07/12/2021 - 10/12/2021</td>
+                                <td><span class="status-label ongoing">ONGOING</span></td>
+                                <td class="action-btn">
+                                    <a href="#">
+                                        <i class="far fa-file-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Serge Gnabry</td>
+                                <td>085429443432</td>
+                                <td>02/12/2021 - 05/12/2021</td>
+                                <td><span class="status-label done">DONE</span></td>
+                                <td class="action-btn">
+                                    <a href="#">
+                                        <i class="far fa-file-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Thomas Muller</td>
+                                <td>081234567891</td>
+                                <td>12/12/2021 - 15/12/2021</td>
+                                <td><span class="status-label confirmed">CONFIRMED</span></td>
+                                <td class="action-btn">
+                                    <a href="#">
+                                        <i class="far fa-file-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Kai Havertz</td>
+                                <td>081234567891</td>
+                                <td>10/12/2021 - 12/12/2021</td>
+                                <td><span class="status-label confirmed">CONFIRMED</span></td>
+                                <td class="action-btn">
+                                    <a href="#">
+                                        <i class="far fa-file-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Timo Werner</td>
+                                <td>081234567891</td>
+                                <td>05/12/2021 - 08/12/2021</td>
+                                <td><span class="status-label done">DONE</span></td>
+                                <td class="action-btn">
+                                    <a href="#">
+                                        <i class="far fa-file-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card-footer">
+                    <small>
+                        Showing 5 of 38 data
+                    </small>
+                    <div class="pagination">
+                        <a href="#prev" class="prev disabled"><</a>
+                        <a href="#" class="selected">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="disabled">...</a>
+                        <a href="#">8</a>
+                        <a href="#" class="next">></a>
                     </div>
                 </div>
             </div>

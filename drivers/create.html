@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="../styles/form.css">
+     
+
+    <title>Orders</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="#">Busman</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../orders/index.html">Orders</a></li>
+                <li><a href="../buses/index.html">Buses</a></li>
+                <li><a href="#" class="active">Drivers</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="page-title">
+                <h5>Add Driver</h5>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form action="index.html">
+                        <div class="row">
+                            <div class="row-child">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Fill Name">
+                                </div>
+                                <div>
+                                    <label for="age">Age</label>
+                                    <input type="number" class="form-control" name="age" id="age" placeholder="Fill Age">
+                                </div>
+                            </div>
+                            <div class="row-child">
+                                <div>
+                                    <label for="id-number">ID Number</label>
+                                    <input type="text" class="form-control" name="id-number" id="id-number" placeholder="Fill ID Number">
+                                </div>
+                                <div style="visibility: hidden;">
+                                    <label for="age">a</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-btn">
+                                    <input type="submit" value="Create" class="form-btn blue-btn">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

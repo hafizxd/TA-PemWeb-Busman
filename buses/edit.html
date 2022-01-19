@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="../styles/form.css">
+     
+
+    <title>Orders</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="#">Busman</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../orders/index.html">Orders</a></li>
+                <li><a href="#" class="active">Buses</a></li>
+                <li><a href="../drivers/index.html">Drivers</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="page-title">
+                <h5>Edit Bus</h5>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form action="index.html">
+                        <div class="row">
+                            <div class="row-child">
+                                <div>
+                                    <label for="plate-number">Plate Number</label>
+                                    <input type="text" class="form-control" name="plate-number" id="plate-number" placeholder="Fill Plate Number" value="S 5867 BE">
+                                </div>
+                                <div>
+                                    <label for="brand">Brand</label>
+                                    <input type="text" class="form-control" name="brand" id="brand" placeholder="Fill Brand" value="Scania">
+                                </div>
+                            </div>
+                            <div class="row-child">
+                                <div>
+                                    <label for="seat">Seat</label>
+                                    <input type="number" class="form-control" name="seat" id="seat" placeholder="Fill Seat" value="40">
+                                </div>
+                                <div>
+                                    <label for="price">Price per Day</label>
+                                    <input type="number" class="form-control" name="price" id="price" placeholder="Fill Price per Day" value="200000">
+                                </div>
+                                <div class="form-btn">
+                                    <input type="submit" value="Edit" class="form-btn yellow-btn">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

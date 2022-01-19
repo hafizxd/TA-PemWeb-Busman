@@ -31,7 +31,7 @@
     <main>
         <div class="container">
             <div class="page-title">
-                <h5>Add Order</h5>
+                <h5>Edit Order</h5>
             </div>
             <div class="card">
                 <div class="card-body">
@@ -40,27 +40,27 @@
                             <div class="row-child">
                                 <div>
                                     <label for="contact-name">Contact Name</label>
-                                    <input type="text" class="form-control" name="contact-name" id="contact-name" placeholder="Fill Contact Name">
+                                    <input type="text" class="form-control" name="contact-name" id="contact-name" placeholder="Fill Contact Name" value="Leroy Sane">
                                 </div>
                                 <div>
                                     <label for="contact-phone">Contact Phone</label>
-                                    <input type="number" class="form-control" name="contact-phone" id="contact-phone" placeholder="Fill Contact Phone">
+                                    <input type="number" class="form-control" name="contact-phone" id="contact-phone" placeholder="Fill Contact Phone" value="081234567891">
                                 </div>
                                 <div>
                                     <label for="rent-date">Rent Date</label>
-                                    <input type="date" class="form-control" name="rent-date" id="rent-date" placeholder="Select Rent Date">
+                                    <input type="date" class="form-control" name="rent-date" id="rent-date" placeholder="Select Rent Date" value="2021-12-07">
                                 </div>
                             </div>
                             <div class="row-child">
                                 <div>
                                     <label for="total-days">Total Days</label>
-                                    <input type="number" class="form-control" name="total-days" id="total-days" placeholder="Fill Total Days">
+                                    <input type="number" class="form-control" name="total-days" id="total-days" placeholder="Fill Total Days" value="3">
                                 </div>
                                 <div>
                                     <label for="Bus">Bus</label>
                                     <select class="form-control" name="Bus" id="Bus">
-                                        <option value="" selected disabled>Select Bus</option>
-                                        <option value="1">Scania - S 5867 BE</option>
+                                        <option value="" disabled>Select Bus</option>
+                                        <option value="1" selected>Scania - S 5867 BE</option>
                                         <option value="2">Mercedes-Benz - AD 2738 SK</option>
                                         <option value="3">Man R37 - K 4758 SE</option>
                                     </select>
@@ -68,15 +68,15 @@
                                 <div>
                                     <label for="Driver">Driver</label>
                                     <select class="form-control" name="Driver" id="Driver">
-                                        <option value="" selected disabled>Select Driver</option>
-                                        <option value="1">Adi - 28A38T</option>
+                                        <option value="" disabled>Select Driver</option>
+                                        <option value="1" selected>Adi - 28A38T</option>
                                         <option value="2">Surya - J898SJ</option>
                                         <option value="3">Toni - 829DS7</option>
                                     </select>
                                 </div>
 
                                 <div class="form-btn">
-                                    <input type="submit" value="Create" class="form-btn blue-btn">
+                                    <input type="submit" value="Save" class="form-btn yellow-btn">
                                 </div>
                             </div>
                         </div>

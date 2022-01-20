@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Busman | Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="dashboard.html">Busman</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="orders/index.html">Orders</a></li>
+                <li><a href="buses/index.html">Buses</a></li>
+                <li><a href="drivers/index.html">Drivers</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="row-dashboard">
+                <div class="card welcome">
+                    <h2>Hi, Hafiz Aminsalim</h2>
+                    <a href="auth.html">Logout</a>
+                </div>
+                <div class="card time-clock">
+                    <p id="clock"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Orders Today</h2>
+                    <div class="card-filters">
+                        <div class="search">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="Search...">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <table class="card-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Contact Name</th>
+                                <th>Contact Phone</th>
+                                <th>Bus</th>
+                                <th>Driver</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Leroy Sane</td>
+                                <td>081234567891</td>
+                                <td>Scania - S 5867 BE</td>
+                                <td>Adi - 28A38T</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Serge Gnabry</td>
+                                <td>085429443432</td>
+                                <td>Mercedes-Benz - AD 2738 SK</td>
+                                <td>Surya - J898SJ</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Thomas Muller</td>
+                                <td>081234567891</td>
+                                <td>Man R37 - K 4758 SE</td>
+                                <td>Toni - 829DS7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card-footer">
+                    <small>
+                        Showing 3 of 3 data
+                    </small>
+                    <div class="pagination">
+                        <a href="#prev" class="prev disabled"><</a>
+                        <a href="#" class="selected">1</a>
+                        <a href="#" class="next disabled">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
